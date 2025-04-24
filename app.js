@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Running on port", PORT));
+app.listen(process.env.PORT || 3000);
 
 app.get("/", (req, res) => {
   res.send("<h1> Hello, World! </h1>");
